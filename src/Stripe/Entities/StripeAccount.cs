@@ -87,5 +87,9 @@ namespace Stripe
 
         [JsonProperty("verification")]
         public StripeAccountVerification Verification { get; set; }
-     }
+
+        [JsonProperty("keys")]
+        public StripeAccountKeys AccountKeys { get; set; }
+        
+    }
 }

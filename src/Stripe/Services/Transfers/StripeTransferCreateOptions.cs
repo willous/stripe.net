@@ -11,22 +11,23 @@ namespace Stripe
         [JsonProperty("currency")]
         public string Currency { get; set; }
 
-        [JsonProperty("recipient")]
-        public string Recipient { get; set; }
+        [JsonProperty("destination")]
+        public string destination { get; set; }
 
         [JsonProperty("description")]
         public string Description { get; set; }
 
-        [JsonProperty("bank_account")]
-        public string BankAccountId { get; set; }
+		[JsonProperty("metadata")]
+        public Dictionary<string, string> Metadata { get; set; }
 
-        [JsonProperty("card")]
-        public string CardId { get; set; }
+		[JsonProperty("source_transaction")]
+        public string SourceTransaction { get; set; }
 
-        [JsonProperty("statement_descriptor")]
+		[JsonProperty("statement_descriptor")]
         public string StatementDescriptor { get; set; }
 
-        [JsonProperty("metadata")]
-        public Dictionary<string, string> Metadata { get; set; }
+		[JsonProperty("source_type")]
+        public string SourceType { get; set; }		 
+				
     }
 }

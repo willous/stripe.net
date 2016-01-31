@@ -119,11 +119,14 @@ namespace Stripe
         // fraud details
 
         // shipping
+		
+    	[JsonProperty("application_fee")]
+        public string ApplicationFee { get; set; }
 
-        // application_fee
+        [JsonProperty("destination")]
+        public string Destination { get; set; }
 
-        // destination
-
-        // transfer
+        [JsonProperty("transfer")]
+        public string Transfer { get; set; }
     }
 }
